@@ -1,0 +1,124 @@
+@import 'fonts';
+
+body {
+  font-family: 'Muli';
+}
+
+.q-table__card {
+  color: #555;
+}
+
+.sticky-header-column-table {
+  max-width: 100%;
+  .q-table__middle {
+    max-height: 450px;
+  }
+  td:first-child {
+    background-color: #fff !important;
+  }
+  tr th {
+    position: sticky;
+    z-index: 2;
+    background: #fff;
+  }
+  thead tr:last-child th {
+    top: 48px;
+    z-index: 3;
+  }
+  thead tr:first-child th {
+    top: 0;
+    z-index: 1;
+  }
+  tr:first-child th:first-child {
+    z-index: 3;
+  }
+  thead tr th:first-child {
+    z-index: 4;
+  }
+  td:first-child {
+    z-index: 1;
+  }
+  td:first-child,
+  th:first-child {
+    position: sticky;
+    left: 0;
+  }
+}
+
+.q-item.q-router-link--active,
+.q-item--active {
+  background: #232332 !important;
+}
+
+.q-field__messages > div {
+  position: relative;
+  top: -6px;
+}
+
+.q-btn {
+  font-size: 12px;
+}
+
+.q-btn__wrapper {
+  padding: 4.5px 21px 4px 14px;
+}
+.q-table__bottom {
+  .q-field {
+    font-size: 12px;
+  }
+}
+.q-table tbody td {
+  font-size: 12px;
+}
+
+.q-dialog__inner
+  > .q-card
+  > .q-card__actions
+  .q-btn--rectangle
+  .q-btn__wrapper {
+  min-width: 38px;
+}
+
+.q-item__section--avatar {
+  min-width: 30px;
+}
+
+.q-tab__label {
+  font-size: 12px;
+}
+
+.q-item__section--side > .q-icon {
+  font-size: 18px;
+}
+
+.q-drawer__content .q-item__label {
+  font-size: 12px;
+}
+
+.q-tab-panel .q-table-control:nth-child(1) > div {
+  //text-h5
+  font-size: 1.5rem !important;
+  font-weight: 400 !important;
+  line-height: 2rem !important;
+  letter-spacing: normal !important;
+}
+
+.q-tab {
+  min-height: 37px;
+}
+.q-tab__content {
+  margin: 2px 0px;
+}
+.q-tab--full {
+  min-height: 37px;
+}
+
+.q-table thead,
+.q-table tr,
+.q-table th,
+.q-table td {
+  border-color: rgba(0, 0, 0, 0.04);
+}
+.q-field--standard .input-select .q-field__control:before {
+  border-bottom: 1px solid rgba(0, 0, 0, 0) !important;
+}
